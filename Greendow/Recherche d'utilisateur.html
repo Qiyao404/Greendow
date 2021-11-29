@@ -5,45 +5,50 @@
 		<title>Recherche d'utilisateur</title>
 		<link rel="shortcut icon" href="img/GW.ico" />
 		<style type="text/css">
-			*{
+			* {
 				margin: 0;
 				-ms-user-select: none;
 			}
-			body{
+
+			body {
 				background: url(img/Connexion%20BG.jpg) no-repeat;
 				background-size: cover;
 				background-attachment: fixed;
 			}
-			
+
 			.container {
 				display: block;
 				max-width: 1080px;
 				margin: 0 auto;
 			}
+
 			.fl {
 				float: left;
 			}
-			
+
 			.fr {
 				float: right;
 			}
-			
+
 			.clearf:after,
 			.clearf:before {
 				content: "";
 				display: block;
 				clear: both;
 			}
+
 			.col-2,
-			{
+				{
 				display: block;
 				position: relative;
 				min-height: 1px;
 				float: left;
 			}
+
 			.col-2 {
 				width: 20%;
 			}
+
 			.top-nav a {
 				height: 80px;
 				line-height: 80px;
@@ -51,10 +56,11 @@
 				color: black;
 				font-size: 20px;
 			}
-			
+
 			.top-nav a:hover {
 				color: royalblue;
 			}
+
 			/* .Recherche{
 				position: absolute;
 				top: 50%;
@@ -85,7 +91,7 @@
 				outline: none;
 				font-size: 22px;
 			} */
-			.btn{
+			.btn {
 				background-color: seagreen;
 				width: 70%;
 				height: 48px;
@@ -96,85 +102,97 @@
 				color: white;
 				border-style: none;
 			}
-			.btn:hover{
+
+			.btn:hover {
 				background-color: #008000;
 			}
-			.entrer:hover{
+
+			.entrer:hover {
 				background-color: gainsboro;
 			}
+
 			#myInput {
-			    background-image: url('img/searchicon.png'); /* 搜索按钮 */
-			    background-position: 10px 12px; /* 定位搜索按钮 */
-			    background-repeat: no-repeat; /* 不重复图片*/
-			    width: 40%; 
-			    font-size: 16px; /* 加大字体 */
-			    padding: 12px 20px 12px 40px; 
-			    border: 1px solid #ddd; 
-			    margin-bottom: 12px; 
+				background-image: url('img/searchicon.png');
+				/* 搜索按钮 */
+				background-position: 10px 12px;
+				/* 定位搜索按钮 */
+				background-repeat: no-repeat;
+				/* 不重复图片*/
+				width: 40%;
+				font-size: 16px;
+				/* 加大字体 */
+				padding: 12px 20px 12px 40px;
+				border: 1px solid #ddd;
+				margin-bottom: 12px;
 				margin: 50px 0 0 600px;
 			}
-			 
+
 			#myUL {
-			    /* 移除默认的列表样式 */
-			    list-style-type: none;
-			    padding: 0;
-			    margin: 0 0 0 600px;
+				/* 移除默认的列表样式 */
+				list-style-type: none;
+				padding: 0;
+				margin: 0 0 0 600px;
 				/* visibility: hidden; */
 				width: 823px;
 			}
-			 #myInput{
-				 border-top-left-radius: 10px;
-				 border-top-right-radius: 10px;
-			 }
-			 
+
+			#myInput {
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+
 			#myUL li a {
-			    border: 1px solid #ddd; /* 链接添加边框 */
-			    margin-top: -1px; 
-			    background-color: #f6f6f6; 
-			    padding: 12px; 
-			    text-decoration: none;
-			    font-size: 18px; 
-			    color: black; 
-			    display: block; 
+				border: 1px solid #ddd;
+				/* 链接添加边框 */
+				margin-top: -1px;
+				background-color: #f6f6f6;
+				padding: 12px;
+				text-decoration: none;
+				font-size: 18px;
+				color: black;
+				display: block;
 			}
-			 
+
 			#myUL li a.header {
-			    background-color: #e2e2e2; 
-			    cursor: default; 
-			}
-			 
-			#myUL li a:hover:not(.header) {
-			    background-color: #eee;
+				background-color: #e2e2e2;
+				cursor: default;
 			}
 			
+			#myUL li a:hover:not(.header) {
+				background-color: #eee;
+			}
+
 			.footer {
 				display: flex;
 				justify-content: space-around;
 				height: 212px;
 				width: 1903px;
-				background-color: rgba(34,140,34,0.8);
+				background-color: rgba(34, 140, 34, 0.8);
+				/* position: absolute;
+				margin: 50px 0 0 0; */
 				position: absolute;
-				margin: 50px 0 0 0;
+				margin-top: calc(100vh - 418px);
+
 			}
-			
+
 			.f2 {
 				color: white;
 				margin-top: 10px;
 				font-size: 14px;
 			}
-			
+
 			.f3 div {
 				font-size: 25px;
 				margin-top: 25px;
 				margin-left: 80px;
-			
+
 			}
-			
+
 			.footer a {
 				text-decoration: none;
 				color: white;
 			}
-			
+
 			.f4 {
 				margin: 75px auto;
 				height: 50px;
@@ -185,7 +203,7 @@
 				text-align: center;
 				line-height: 50px;
 			}
-			
+
 			.footer a:hover {
 				color: yellow;
 			}
@@ -194,7 +212,8 @@
 	<body>
 		<div class="top-nav">
 			<div class="container clearf">
-				<div class="fl"><a href="index.html"><img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
+				<div class="fl"><a href="index.html"><img
+							src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
 							style="height: 80px;"></a>
 				</div>
 				<div class="fl">
@@ -208,50 +227,49 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Recherche...">
-		 
-		<ul id="myUL">
-		  <li><a href="#" class="header">A</a></li>
-		  <li><a href="#">Adele</a></li>
-		  <li><a href="#">Agnes</a></li>
-		 
-		  <li><a href="#" class="header">B</a></li>
-		  <li><a href="#">Billy</a></li>
-		  <li><a href="#">Bob</a></li>
-		 
-		  <li><a href="#" class="header">C</a></li>
-		  <li><a href="#">Calvin</a></li>
-		  <li><a href="#">Christina</a></li>
-		  <li><a href="#">Cindy</a></li>
-		  
-		  <li><a href="#" class="header">D</a></li>
-		  <li><a href="#">Daniel</a></li>
-		  <li><a href="#">Denis</a></li>
-		  <li><a href="#">Dominique</a></li>
-		  
-		  <li><a href="#" class="header">E</a></li>
-		  <li><a href="#">Edmond</a></li>
-		  <li><a href="#">Eude</a></li>
-		  <li><a href="#">Evariste</a></li>
-		  
-		  <li><a href="#" class="header">F</a></li>
-		  <li><a href="#">Fabien</a></li>
-		  <li><a href="#">Florent</a></li>
-		  <li><a href="#">Fernand</a></li>
-		  
-		  <li><a href="#" class="header">G</a></li>
-		  <li><a href="#">Gabriel</a></li>
-		  <li><a href="#">Georges</a></li>
-		  <li><a href="#">Guy</a></li>
-		</ul>
-		
-		
+
+		<div class="middle">
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Recherche...">
+
+			<ul id="myUL">
+				<li><a href="#" class="header">A</a></li>
+				<li><a href="#">Adele</a></li>
+				<li><a href="#">Agnes</a></li>
+
+				<li><a href="#" class="header">B</a></li>
+				<li><a href="#">Billy</a></li>
+				<li><a href="#">Bob</a></li>
+
+				<li><a href="#" class="header">C</a></li>
+				<li><a href="#">Calvin</a></li>
+				<li><a href="#">Christina</a></li>
+				<li><a href="#">Cindy</a></li>
+
+				<li><a href="#" class="header">D</a></li>
+				<li><a href="#">Daniel</a></li>
+				<li><a href="#">Denis</a></li>
+				<li><a href="#">Dominique</a></li>
+
+				<li><a href="#" class="header">E</a></li>
+				<li><a href="#">Edmond</a></li>
+				<li><a href="#">Eude</a></li>
+				<li><a href="#">Evariste</a></li>
+
+				<li><a href="#" class="header">F</a></li>
+				<li><a href="#">Fabien</a></li>
+				<li><a href="#">Florent</a></li>
+				<li><a href="#">Fernand</a></li>
+
+				<li><a href="#" class="header">G</a></li>
+				<li><a href="#">Gabriel</a></li>
+				<li><a href="#">Georges</a></li>
+				<li><a href="#">Guy</a></li>
+			</ul>
 		</div>
+
+		
 		<div class="footer">
-			<div class="col-2"><img src="img/EPA%20rogné.png"
-					style="height:150px;margin:35px 0 0 20px" /></div>
+			<div class="col-2"><img src="img/EPA%20rogné.png" style="height:150px;margin:35px 0 0 20px" /></div>
 			<div class="col-2 f2">
 				Lorem ipsum dolor sit amet, consectetur <br>
 				adipiscing elit, sed do eiusmod tempor <br>
@@ -268,7 +286,7 @@
 				<div><a href="#">Qui sommes-nous?</a></div>
 				<div><a href="#">FAQ Assistance</a></div>
 				<div><a href="#">Mentions légales CGU</a></div>
-		
+
 			</div>
 			<div class="col-2">
 				<div class="f4">
@@ -283,22 +301,22 @@
 	</body>
 	<script type="text/javascript">
 		function myFunction() {
-		    // 声明变量
-		    var input, filter, ul, li, a, i;
-		    input = document.getElementById('myInput');
-		    filter = input.value.toUpperCase();
-		    ul = document.getElementById("myUL");
-		    li = ul.getElementsByTagName('li');
-		 
-		    // 循环所有列表，查找匹配项
-		    for (i = 0; i < li.length; i++) {
-		        a = li[i].getElementsByTagName("a")[0];
-		        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-		            li[i].style.display = "";
-		        } else {
-		            li[i].style.display = "none";
-		        }
-		    }
+			// 声明变量
+			var input, filter, ul, li, a, i;
+			input = document.getElementById('myInput');
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("myUL");
+			li = ul.getElementsByTagName('li');
+
+			// 循环所有列表，查找匹配项
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("a")[0];
+				if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
 		}
 	</script>
 </html>
