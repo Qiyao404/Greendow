@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Gérer d'un utilisateur</title>
+		<link rel="shortcut icon" href="img/GW.ico" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				-ms-user-select: none;
+			}
+
+			body {
+				/* background: url(img/Connexion%20BG.jpg) no-repeat; */
+				background-image: linear-gradient(to left bottom, #e5168c, #c254c2, #8b79e2, #4892e9, #00a2dd, #00aed7, #00b8cb, #00c1ba, #00cfae, #00da94, #00e46b, #08eb26);
+				background-size: cover;
+				background-attachment: fixed;
+			}
+
+			.container {
+				display: block;
+				max-width: 1080px;
+				margin: 0 auto;
+			}
+
+			.fl {
+				float: left;
+			}
+
+			.fr {
+				float: right;
+			}
+
+			.clearf:after,
+			.clearf:before {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			.col-2,
+				{
+				display: block;
+				position: relative;
+				min-height: 1px;
+				float: left;
+			}
+
+			.col-2 {
+				width: 20%;
+			}
+
+			.top-nav a {
+				height: 80px;
+				line-height: 80px;
+				text-decoration: none;
+				color: black;
+				font-size: 20px;
+			}
+
+			.top-nav a:hover {
+				color: royalblue;
+			}
+
+			.Control {
+				position: absolute;
+				top: 50%;
+				margin-top: -350px;
+				left: 50%;
+				margin-left: -600px;
+				background-color: rgba(0, 0, 0, 0.2);
+				width: 1200px;
+				height: 1300px;
+				border-radius: 25px;
+				/* text-align: center; */
+			}
+
+			.information {
+				height: 430px;
+				width: 100%;
+				/* background-color: red; */
+			}
+
+			.I2 {
+				color: white;
+				font-size: 37px;
+				margin-left: 100px;
+			}
+
+			.I1 {
+				margin-left: 40px;
+				margin-top: 50px;
+				font-size: 30px;
+				color: white;
+				display: inline-block;
+			}
+
+			#choisir {
+				margin-left: 20px;
+				width: 120px;
+				height: 40px;
+				font-size: 25px;
+				border-radius: 8px;
+				background-color: lightgreen;
+			}
+
+			.capteur {
+				height: 870px;
+				/* background-color: blue; */
+				display: grid;
+				grid-template-rows: 1fr 1fr;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-areas:
+					"temperature humidite co2"
+					"pouls particules sonexterieur"
+			}
+			input:hover{
+				background-color: #00AED7!important;
+			}
+			.temperature {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: temperature;
+				background-color: #5BB948;
+			}
+
+			.humidite {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: humidite;
+				background-color: #5BB948;
+			}
+
+			.co2 {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: co2;
+				background-color: #5BB948;
+			}
+
+			.pouls {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: pouls;
+				background-color: #5BB948;
+			}
+
+			.particules {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: particules;
+				background-color: #5BB948;
+			}
+
+			.sonexterieur {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: sonexterieur;
+				background-color: #5BB948;
+			}
+
+			.footer {
+				display: flex;
+				justify-content: space-around;
+				height: 212px;
+				width: 1903px;
+				/* background-color: rgba(34, 140, 34, 0.8); */
+				position: absolute;
+				margin: 1345px 0 0 0;
+			}
+
+			.f2 {
+				color: white;
+				margin-top: 10px;
+				font-size: 14px;
+			}
+
+			.f3 div {
+				font-size: 25px;
+				margin-top: 25px;
+				margin-left: 80px;
+
+			}
+
+			.footer a {
+				text-decoration: none;
+				color: white;
+			}
+
+			.f4 {
+				margin: 75px auto;
+				height: 50px;
+				width: 100px;
+				background-color: #5eaf4d;
+				border-radius: 10px;
+				font-size: 22px;
+				text-align: center;
+				line-height: 50px;
+			}
+
+			.footer a:hover {
+				color: yellow;
+			}
+		</style>
+	</head>
+	<body onload="startTime()">
+		<div class="top-nav">
+			<div class="container clearf">
+				<div class="fl"><a href="index.html"><img
+							src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
+							style="height: 80px;"></a>
+				</div>
+				<div class="fl">
+					<a href="#" style="margin-left: 60px;">Pourquoi Greendow</a>
+					<a href="#">| FAQ |</a>
+					<a href="#">Acheter</a>
+				</div>
+				<div class="fr">
+					<a href="Connexion.html">Connexion</a>
+					<a href="#">| Support</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="Control">
+			<div class="information">
+				<form action="" method="get">
+					<p style="text-align: center;font-size: 30px;color: white;margin: 20px 0;"><span
+							id="nowDateTimeSpan"></span></p>
+					<div class="I2">Nom :</div>
+					<div class="I2">Prénom :</div>
+					<div class="I2">âge :</div>
+					<div class="I2">Date d enaissance :</div>
+					<div class="I2">Etat de l'abonnement :</div>
+					<div class="I1" style="margin-left: 450px;">Sélectionner la fenêtre :</div>
+					<div class="I1">
+						<select name="fenêtre" id="choisir">
+							<option value="f1">fenêtre1</option>
+							<option value="f2">fenêtre2</option>
+							<option value="f3">fenêtre3</option>
+							<option value="f4">fenêtre4</option>
+						</select>
+					</div>
+					<div class="I1">
+						<input type="submit" value="Supprimer la fenêtre"
+							style="font-size: 15px;width: 150px;height: 40px;background-color: darkorange;border-radius: 8px;color: white;" />
+					</div>
+				</form>
+			</div>
+			<div class="capteur">
+				<div class="temperature" id="c1">
+					<p style="color: white;font-size: 35px;text-align: center;margin-top: 10px;">Température​</p>
+					<div style="height: 3px;background-color: white;margin: 15px 0;"></div>
+					<img src="img/temperature.png" style="height: 150px;margin: 20px 0 20px 72px;">
+					<p style="color: white;font-size: 30px;text-align: center;">20 ℃</p>
+				</div>
+				<div class="humidite" id="c1">
+					<p style="color: white;font-size: 35px;text-align: center;margin-top: 10px;">Humidité</p>
+					<div style="height: 3px;background-color: white;margin: 15px 0;"></div>
+					<img src="img/humidite.png" style="height: 150px;margin: 20px 0 20px 72px;">
+					<p style="color: white;font-size: 30px;text-align: center;">45 %</p>
+				</div>
+				<div class="co2" id="c1">
+					<p style="color: white;font-size: 35px;text-align: center;margin-top: 10px;">CO<sup>2</sup>​</p>
+					<div style="height: 3px;background-color: white;margin: 15px 0;"></div>
+					<img src="img/CO2.png" style="height: 150px;margin: 20px 0 20px 72px;">
+					<p style="color: white;font-size: 30px;text-align: center;">715 ppm</p>
+				</div>
+				<div class="pouls" id="c1">
+					<p style="color: white;font-size: 35px;text-align: center;margin-top: 10px;">Pouls</p>
+					<div style="height: 3px;background-color: white;margin: 15px 0;"></div>
+					<img src="img/pouls.png" style="height: 150px;margin: 20px 0 20px 72px;">
+					<p style="color: white;font-size: 30px;text-align: center;">69 bpm</p>
+				</div>
+				<div class="particules" id="c1">
+					<p style="color: white;font-size: 35px;text-align: center;margin-top: 10px;">Particules</p>
+					<div style="height: 3px;background-color: white;margin: 15px 0;"></div>
+					<img src="img/particules.png" style="height: 150px;margin: 20px 0 20px 72px;">
+					<p style="color: white;font-size: 30px;text-align: center;">0.3 ppm</p>
+				</div>
+				<div class="sonexterieur" id="c1">
+					<p style="color: white;font-size: 35px;text-align: center;margin-top: 10px;">Son extérieur</p>
+					<div style="height: 3px;background-color: white;margin: 15px 0;"></div>
+					<img src="img/son%20exterieur.png" style="height: 150px;margin: 20px 0 20px 72px;">
+					<p style="color: white;font-size: 30px;text-align: center;">54 dB</p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="footer">
+			<div class="col-2"><img src="img/EPA%20rogné.png" style="height:150px;margin:35px 0 0 20px" /></div>
+			<div class="col-2 f2">
+				Lorem ipsum dolor sit amet, consectetur <br>
+				adipiscing elit, sed do eiusmod tempor <br>
+				incididunt ut labore et dolore magna aliqua. <br>
+				Ut enim ad minim veniam, quis nostrud <br>
+				exercitationullamco laboris nisi ut aliquip <br>
+				ex ea commodoconsequat. Duis aute irure dolor <br>
+				in reprehenderit in voluptate velit esse cillum <br>
+				dolore eu fugiatnulla pariatur. Excepteur sint <br>
+				occaecat cupidatat non proident, sunt in culpa <br>
+				qui officia deserunt mollit anim id est laborum.
+			</div>
+			<div class="col-2 f3">
+				<div><a href="#">Qui sommes-nous?</a></div>
+				<div><a href="#">FAQ Assistance</a></div>
+				<div><a href="#">Mentions légales CGU</a></div>
+
+			</div>
+			<div class="col-2">
+				<div class="f4">
+					<a href="mailto:Xqy1402494129@gmil.com">Contact</a>
+				</div>
+			</div>
+			<div class="col-2">
+				<img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
+					style="height:130px;margin:40px 0 0 40px">
+			</div>
+		</div>
+	</body>
+	<script language="JavaScript">
+		function startTime() {
+			var today = new Date(); //定义日期对象   
+			var yyyy = today.getFullYear(); //通过日期对象的getFullYear()方法返回年    
+			var MM = today.getMonth() + 1; //通过日期对象的getMonth()方法返回年    
+			var dd = today.getDate(); //通过日期对象的getDate()方法返回年     
+			var hh = today.getHours(); //通过日期对象的getHours方法返回小时   
+			var mm = today.getMinutes(); //通过日期对象的getMinutes方法返回分钟   
+			var ss = today.getSeconds(); //通过日期对象的getSeconds方法返回秒   
+			// 如果分钟或小时的值小于10，则在其值前加0，比如如果时间是下午3点20分9秒的话，则显示15：20：09   
+			MM = checkTime(MM);
+			dd = checkTime(dd);
+			mm = checkTime(mm);
+			ss = checkTime(ss);
+			var day; //用于保存星期（getDay()方法得到星期编号）
+			if (today.getDay() == 0) day = "Dimanche "
+			if (today.getDay() == 1) day = "Lundi "
+			if (today.getDay() == 2) day = "Mardi "
+			if (today.getDay() == 3) day = "Mercredi "
+			if (today.getDay() == 4) day = "Jeudi "
+			if (today.getDay() == 5) day = "Vendredi "
+			if (today.getDay() == 6) day = "Samedi "
+			document.getElementById('nowDateTimeSpan').innerHTML = yyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" +
+				ss + "   " + day;
+			setTimeout('startTime()', 1000); //每一秒中重新加载startTime()方法 
+		}
+
+		function checkTime(i) {
+			if (i < 10) {
+				i = "0" + i;
+			}
+			return i;
+		}
+	</script>
+</html>
