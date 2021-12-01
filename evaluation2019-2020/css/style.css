@@ -1,0 +1,66 @@
+/* Question2 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.s1 {
+	height: 400px;
+	width: 400px;
+	display: inline-block;
+}
+
+.s1 img:hover {
+	border: 2px solid gray;
+}
+
+/* Question3 */
+#Title{
+	margin: 30px 0 50px 100px;
+}
+.t1{
+	margin: 10px 0 0 120px;
+	height: 400px;
+	width: 300px;
+}
+fieldset{
+	border: 2px solid red;
+}
+legend{
+	margin-left: 20px;
+	color: red;
+}
+.t1 p{
+	margin-left: 40px;
+}	
+.t1 input,textarea,select{
+	width: 80%;
+	border: 2px solid red;
+	border-radius: 8px;
+}
+.t1 select{
+	background-color: gainsboro;
+}
+#btn{
+	margin-top: 50px;
+	height: 30px;
+	width: 100px;
+	margin-left: 10px;
+	border-bottom-color:purple ;
+	border-right-color: purple;
+}
+
+/* Q4 *//* Q5 */
+.p1{
+	margin: 10px 0 10px 120px;
+}
+.p1 img{
+	height: 400px;
+}
+
+/* Q6 */
+
+.s2{
+	display: flex;
+	flex-wrap: wrap;
+}
