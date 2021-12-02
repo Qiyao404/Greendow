@@ -9,12 +9,27 @@
 				margin: 0;
 				-ms-user-select: none;
 			}
-
 			body {
-				/* background: url(img/Connexion%20BG.jpg) no-repeat; */
-				background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+				/* background: linear-gradient(125deg,#845EC2,#D65DB1,#FF6F91,#FF9671,#FFC75F,#F9F871); */
+				background-image: linear-gradient(135deg, #0cec3c, #cdb600, #ff5b00, #ff007d, #bb12eb);
 				background-size: cover;
 				background-attachment: fixed;
+				background-size: 400%;
+				animation: bganimation 45s infinite;
+			}
+			
+			@keyframes bganimation {
+				0% {
+					background-position: 0% 50%;
+				}
+			
+				50% {
+					background-position: 100% 50%;
+				}
+			
+				100% {
+					background-position: 0% 50%;
+				}
 			}
 
 			.container {
