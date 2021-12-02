@@ -2,48 +2,75 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Petie quizz d'inscription</title>
+		<title>SUpprimer</title>
 		<link rel="shortcut icon" href="img/GW.ico" />
 		<style type="text/css">
-			*{
+			* {
 				margin: 0;
 				-ms-user-select: none;
 			}
-			body{
-				background: url(img/quizz.jpg) no-repeat;
+
+			/* body {
+				background: url(img/Connexion%20BG.jpg) no-repeat;
 				background-size: cover;
 				background-attachment: fixed;
+			} */
+			body {
+				/* background: linear-gradient(125deg,#845EC2,#D65DB1,#FF6F91,#FF9671,#FFC75F,#F9F871); */
+				background-image: linear-gradient(135deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+				background-size: cover;
+				background-attachment: fixed;
+				background-size: 400%;
+				animation: bganimation 45s infinite;
 			}
-			
+
+			@keyframes bganimation {
+				0% {
+					background-position: 0% 50%;
+				}
+
+				50% {
+					background-position: 100% 50%;
+				}
+
+				100% {
+					background-position: 0% 50%;
+				}
+			}
+
 			.container {
 				display: block;
 				max-width: 1080px;
 				margin: 0 auto;
 			}
+
 			.fl {
 				float: left;
 			}
-			
+
 			.fr {
 				float: right;
 			}
-			
+
 			.clearf:after,
 			.clearf:before {
 				content: "";
 				display: block;
 				clear: both;
 			}
+
 			.col-2,
-			{
+				{
 				display: block;
 				position: relative;
 				min-height: 1px;
 				float: left;
 			}
+
 			.col-2 {
 				width: 20%;
 			}
+
 			.top-nav a {
 				height: 80px;
 				line-height: 80px;
@@ -51,90 +78,78 @@
 				color: black;
 				font-size: 20px;
 			}
-			
+
 			.top-nav a:hover {
 				color: royalblue;
 			}
-			.Quizz{
+
+			.Quizz {
 				position: absolute;
 				top: 50%;
 				margin-top: -300px;
 				left: 50%;
-				margin-left: -500px;
-				background-color: rgba(0,0,0,0.4);
-				width: 1000px;
+				margin-left: -370px;
+				background-color: #5BB948;
+				width: 800px;
 				height: 500px;
 				border-radius: 25px;
-				text-align: center;
+				/* text-align: center; */
 			}
-			p{
-				font-size: 30px;
+
+			p {
+				font-size: 50px;
 				font-weight: 600;
 				padding: 5px 40px;
 				box-sizing: border-box;
 				margin-top: 30px;
 				margin-bottom: 30px;
-				color: white;
 			}
-			input{
-				background-color: whitesmoke;
-				width: 80%;
-				height: 48px;
-				margin-bottom: 10px;
-				border: none;
-				border-bottom: 2px solid silver;
-				outline: none;
-				font-size: 22px;
-			}
-			.btn{
-				background-color: seagreen;
-				width: 70%;
+
+			#btn {
+				background-color: darkorange;
+				width: 30%;
 				height: 48px;
 				border-radius: 8px;
-				margin-top: 20px;
+				margin: 30px 0 0 110px;
 				font-size: 28px;
 				font-weight: 600;
 				color: white;
 				border-style: none;
 			}
-			.btn:hover{
-				background-color: #008000;
+
+			#btn:hover {
+				background-color: skyblue;
 			}
-			.entrer:hover{
-				background-color: gainsboro;
-			}
-			.Quizz a:hover{
-				color: #4169E1!important;
-			}
-			
+
+
 			.footer {
 				display: flex;
 				justify-content: space-around;
 				height: 212px;
 				width: 1920px;
-				background-color: rgba(34,140,34,0.8);
+				/* background-color: rgba(34, 140, 34, 0.8); */
 				position: absolute;
 				margin: 645px 0 0 0;
 			}
-			
+
 			.f2 {
 				color: white;
 				margin-top: 10px;
 				font-size: 14px;
 			}
-			
+
 			.f3 div {
 				font-size: 25px;
 				margin-top: 25px;
 				margin-left: 80px;
-			
+
 			}
-			
+
 			.footer a {
 				text-decoration: none;
 				color: white;
 			}
-			
+
 			.f4 {
 				margin: 75px auto;
 				height: 50px;
@@ -145,7 +160,7 @@
 				text-align: center;
 				line-height: 50px;
 			}
-			
+
 			.footer a:hover {
 				color: yellow;
 			}
@@ -154,7 +169,8 @@
 	<body>
 		<div class="top-nav">
 			<div class="container clearf">
-				<div class="fl"><a href="index.html"><img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
+				<div class="fl"><a href="index.html"><img
+							src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
 							style="height: 80px;"></a>
 				</div>
 				<div class="fl">
@@ -168,23 +184,21 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		<form action="Quizz.html" class="Quizz">
-			<p>Combien de capteurs possèdes-tu sur ta fenêtre Greendow ?</p>
-			<input type="submit" class="btn" value="3 capteurs">
-			<input type="submit" class="btn" value="4 capteurs">
-			<input type="submit" class="btn" value="5 capteurs">
-			<input type="submit" class="btn" value="9 capteurs">
-			<div><input type="submit" class="btn" value="Passer le Quizz" 
-			style="float: right;width: 200px;margin-right: 50px;font-size: 25px;"/></div>
+
+
+		<form action="" class="Quizz">
+			<p style="text-align: center;color: white;font-size: 40px;margin-top: 100px;">
+				<img src="img/!.svg" style="height: 40px;">
+				Vous être sur le point de supprimer la fenêtre... <br>Êtes-vous sûr vouloir la supprimer?
+			</p>
+			<input type="submit" name="Supprimer" id="btn" value="Supprimer" /><input type="submit" name="Annuler"
+				id="btn" value="Annuler" />
 		</form>
-		
-		
+
+
 		</div>
 		<div class="footer">
-			<div class="col-2"><img src="img/EPA%20rogné.png"
-					style="height:150px;margin:35px 0 0 20px" /></div>
+			<div class="col-2"><img src="img/EPA%20rogné.png" style="height:150px;margin:35px 0 0 20px" /></div>
 			<div class="col-2 f2">
 				Lorem ipsum dolor sit amet, consectetur <br>
 				adipiscing elit, sed do eiusmod tempor <br>
@@ -201,7 +215,7 @@
 				<div><a href="#">Qui sommes-nous?</a></div>
 				<div><a href="#">FAQ Assistance</a></div>
 				<div><a href="#">Mentions légales CGU</a></div>
-		
+
 			</div>
 			<div class="col-2">
 				<div class="f4">
