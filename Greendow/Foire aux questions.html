@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Foire aux questions</title>
+		<link rel="shortcut icon" href="img/GW.ico" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				-ms-user-select: none;
+			}
+
+			body {
+				background-image: linear-gradient(135deg, #e91d26, #ed004e, #e40075, #cd009c, #a221bf, #8352dd, #5a70f3, #0089ff, #00aeff, #00c8f1, #00da9c, #07e31a);
+				background-size: cover;
+				background-attachment: fixed;
+				background-size: 400%;
+				animation: bganimation 45s infinite;
+			}
+			
+			@keyframes bganimation {
+				0% {
+					background-position: 0% 50%;
+				}
+			
+				50% {
+					background-position: 100% 50%;
+				}
+			
+				100% {
+					background-position: 0% 50%;
+				}
+			}
+
+			.container {
+				display: block;
+				max-width: 1080px;
+				margin: 0 auto;
+			}
+
+			.fl {
+				float: left;
+			}
+
+			.fr {
+				float: right;
+			}
+
+			.clearf:after,
+			.clearf:before {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			.col-2,
+				{
+				display: block;
+				position: relative;
+				min-height: 1px;
+				float: left;
+			}
+
+			.col-2 {
+				width: 20%;
+			}
+
+			.top-nav a {
+				height: 80px;
+				line-height: 80px;
+				text-decoration: none;
+				color: black;
+				font-size: 20px;
+			}
+
+			.top-nav a:hover {
+				color: royalblue;
+			}
+
+			.Control {
+				position: absolute;
+				top: 50%;
+				margin-top: -350px;
+				left: 50%;
+				margin-left: -600px;
+				background-color: rgba(0, 0, 0, 0.2);
+				width: 1200px;
+				height: 1330px;
+				border-radius: 25px;
+				/* text-align: center; */
+			}
+
+			.title {
+				height: 130px;
+				width: 100%;
+				/* background-color: red; */
+			}
+
+			.Aider {
+				height: 620px;
+				/* background-color: blue; */
+				display: grid;
+				grid-template-rows: 1fr 1fr;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-areas:
+					"information livraison retour"
+					"commande paiement technique"
+
+			}
+
+			.Aider>a:hover {
+				background-color: skyblue;
+			}
+
+			.information {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: information;
+				background-color: #5BB948;
+			}
+
+			.livraison {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: livraison;
+				background-color: #5BB948;
+			}
+
+			.retour {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: retour;
+				background-color: #5BB948;
+			}
+
+			.commande {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: commande;
+				background-color: #5BB948;
+			}
+
+			.paiement {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: paiement;
+				background-color: #5BB948;
+			}
+
+			.technique {
+				border-radius: 30px;
+				margin: 40px 50px;
+				grid-area: technique;
+				background-color: #5BB948;
+			}
+			.Questions1{
+				width: 80%;
+				height: 480px;
+				background-color: rgba(34, 140, 34, 0.5);
+				margin: 0 0 0 120px;
+				border-radius: 25px;
+			}
+			.Questions{
+				width: 80%;
+				height: 50px;
+				background-color: darkorange;
+				display: flex;
+				margin: -50px 0 80px 96px;
+				border-radius: 10px;
+			}
+			.Questions1 a:hover{
+				background-color: skyblue;
+			}
+			.footer {
+				display: flex;
+				justify-content: space-around;
+				height: 212px;
+				width: 1903px;
+				/* background-color: rgba(34, 140, 34, 0.8); */
+				position: absolute;
+				margin: 1375px 0 0 0;
+			}
+
+			.f2 {
+				color: white;
+				margin-top: 10px;
+				font-size: 14px;
+			}
+
+			.f3 div {
+				font-size: 25px;
+				margin-top: 25px;
+				margin-left: 80px;
+
+			}
+
+			.footer a {
+				text-decoration: none;
+				color: white;
+			}
+
+			.f4 {
+				margin: 75px auto;
+				height: 50px;
+				width: 100px;
+				background-color: #5eaf4d;
+				border-radius: 10px;
+				font-size: 22px;
+				text-align: center;
+				line-height: 50px;
+			}
+
+			.footer a:hover {
+				color: yellow;
+			}
+		</style>
+	</head>
+	<body onload="startTime()">
+		<div class="top-nav">
+			<div class="container clearf">
+				<div class="fl"><a href="index.html"><img
+							src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
+							style="height: 80px;"></a>
+				</div>
+				<div class="fl">
+					<a href="#" style="margin-left: 60px;">Pourquoi Greendow</a>
+					<a href="#">| FAQ |</a>
+					<a href="#">Acheter</a>
+				</div>
+				<div class="fr">
+					<a href="Connexion.html">Connexion</a>
+					<a href="#">| Support</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="Control">
+			<div class="title">
+				<p style="text-align: center;font-size: 30px;color: white;margin-top: 10px;"><span
+						id="nowDateTimeSpan"></span></p>
+				<p style="color: white;font-size: 35px;margin: 15px 0 0 120px;">Comment pouvons-nous vous aider?</p>
+			</div>
+			<div class="Aider">
+				<a href="#" style="text-decoration: none;"class="information">
+						<img src="img/information.png" style="height: 125px;margin: 10px 0 10px 90px;">
+						<p style="color: white;font-size: 30px;text-align: center;margin: 0 auto;text-decoration: none;">
+							Informations <br>générales</p>
+				</a>
+				<a href="#" style="text-decoration: none;"class="livraison">
+						<img src="img/livraison.png" style="height: 125px;margin: 10px 0 5px 25px;">
+						<p style="color: white;font-size: 30px;text-align: center;">
+							Livraison</p>
+				</a>
+				<a href="#" style="text-decoration: none;"class="retour">
+						<img src="img/retour.png" style="height: 125px;margin: 10px 0 5px 80px;">
+						<p style="color: white;font-size: 30px;text-align: center;">
+							Retour / <br>remboursement</p>
+				</a>
+				<a href="#" style="text-decoration: none;"class="commande">
+						<img src="img/commande.png" style="height: 125px;margin: 20px 0 10px 13px;">
+						<p style="color: white;font-size: 30px;text-align: center;">
+							Commande</p>
+				</a>
+				<a href="#" style="text-decoration: none;"class="paiement">
+						<img src="img/Paiement.png" style="height: 125px;margin: 20px 0 10px 80px;">
+						<p style="color: white;font-size: 30px;text-align: center;">
+							Paiement</p>
+				</a>
+				<a href="#" style="text-decoration: none;"class="technique">
+						<img src="img/technique.png" style="height: 150px;margin: 5px 0 5px 72px;">
+						<p style="color: white;font-size: 30px;text-align: center;">
+							Technique</p>
+				</a>
+			</div>
+			
+			<div class="Questions1">
+				<p class="title"style="text-align: center;font-size: 50px;color: white;margin-top: 30px;">Questions fréquentes</p>
+				<a href="#" class="Questions" style="text-decoration: none;"><p style="font-size: 40px;color: white;margin: 0 auto;">Livraison internationale</p>
+					<p style="font-size: 40px;color: white;" >&gt;</p></a>
+				<a href="#" class="Questions" style="text-decoration: none;"><p style="font-size: 40px;color: white;margin: 0 auto;">Abbonnement</p>
+					<p style="font-size: 40px;color: white;" >&gt;</p></a>
+				<a href="#" class="Questions" style="text-decoration: none;"><p style="font-size: 40px;color: white;margin: 0 auto;">Maintenance</p>
+					<p style="font-size: 40px;color: white;" >&gt;</p></a>
+				<a href="#" class="Questions" style="text-decoration: none;"><p style="font-size: 40px;color: white;margin: 0 auto;">Gérer votre fenêtre</p>
+					<p style="font-size: 40px;color: white;" >&gt;</p></a>
+				<a href="#" class="Questions" style="text-decoration: none;"><p style="font-size: 40px;color: white;margin: 0 auto;">Nous écrire</p>
+					<p style="font-size: 40px;color: white;" >&gt;</p></a>
+			</div>
+		</div>
+
+
+
+
+		<div class="footer">
+			<div class="col-2"><img src="img/EPA%20rogné.png" style="height:150px;margin:35px 0 0 20px" /></div>
+			<div class="col-2 f2">
+				Lorem ipsum dolor sit amet, consectetur <br>
+				adipiscing elit, sed do eiusmod tempor <br>
+				incididunt ut labore et dolore magna aliqua. <br>
+				Ut enim ad minim veniam, quis nostrud <br>
+				exercitationullamco laboris nisi ut aliquip <br>
+				ex ea commodoconsequat. Duis aute irure dolor <br>
+				in reprehenderit in voluptate velit esse cillum <br>
+				dolore eu fugiatnulla pariatur. Excepteur sint <br>
+				occaecat cupidatat non proident, sunt in culpa <br>
+				qui officia deserunt mollit anim id est laborum.
+			</div>
+			<div class="col-2 f3">
+				<div><a href="#">Qui sommes-nous?</a></div>
+				<div><a href="#">FAQ Assistance</a></div>
+				<div><a href="#">Mentions légales CGU</a></div>
+
+			</div>
+			<div class="col-2">
+				<div class="f4">
+					<a href="mailto:Xqy1402494129@gmil.com">Contact</a>
+				</div>
+			</div>
+			<div class="col-2">
+				<img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
+					style="height:130px;margin:40px 0 0 40px">
+			</div>
+		</div>
+	</body>
+	<script language="JavaScript">
+		function startTime() {
+			var today = new Date(); //定义日期对象   
+			var yyyy = today.getFullYear(); //通过日期对象的getFullYear()方法返回年    
+			var MM = today.getMonth() + 1; //通过日期对象的getMonth()方法返回年    
+			var dd = today.getDate(); //通过日期对象的getDate()方法返回年     
+			var hh = today.getHours(); //通过日期对象的getHours方法返回小时   
+			var mm = today.getMinutes(); //通过日期对象的getMinutes方法返回分钟   
+			var ss = today.getSeconds(); //通过日期对象的getSeconds方法返回秒   
+			// 如果分钟或小时的值小于10，则在其值前加0，比如如果时间是下午3点20分9秒的话，则显示15：20：09   
+			MM = checkTime(MM);
+			dd = checkTime(dd);
+			mm = checkTime(mm);
+			ss = checkTime(ss);
+			var day; //用于保存星期（getDay()方法得到星期编号）
+			if (today.getDay() == 0) day = "Dimanche "
+			if (today.getDay() == 1) day = "Lundi "
+			if (today.getDay() == 2) day = "Mardi "
+			if (today.getDay() == 3) day = "Mercredi "
+			if (today.getDay() == 4) day = "Jeudi "
+			if (today.getDay() == 5) day = "Vendredi "
+			if (today.getDay() == 6) day = "Samedi "
+			document.getElementById('nowDateTimeSpan').innerHTML = yyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" +
+				ss + "   " + day;
+			setTimeout('startTime()', 1000); //每一秒中重新加载startTime()方法 
+		}
+
+		function checkTime(i) {
+			if (i < 10) {
+				i = "0" + i;
+			}
+			return i;
+		}
+	</script>
+</html>
