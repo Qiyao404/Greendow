@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Utilisateur</title>
+		<link rel="shortcut icon" href="img/GW.ico" />
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				-ms-user-select: none;
+			}
+			/* body{
+				background: url(img/Connexion%20BG.jpg) no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			} */
+			
+			.container {
+				display: block;
+				max-width: 1080px;
+				margin: 0 auto;
+			}
+			.fl {
+				float: left;
+			}
+			
+			.fr {
+				float: right;
+			}
+			
+			.clearf:after,
+			.clearf:before {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.col-2,
+			{
+				display: block;
+				position: relative;
+				min-height: 1px;
+				float: left;
+			}
+			.col-2 {
+				width: 20%;
+			}
+			.top-nav a {
+				height: 80px;
+				line-height: 80px;
+				text-decoration: none;
+				color: black;
+				font-size: 20px;
+			}
+			
+			.top-nav a:hover {
+				color: royalblue;
+			}
+			.utilisateur{
+				width: 90%;
+				height: 1000px;
+				display: flex;
+				flex-direction: column;
+				margin-left: 5%;
+				/* background-color: #004D7A; */
+			}
+			.u1{
+				height: 850px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			.utilisateur a{
+				position: sticky;
+				width: calc(100% / 3);
+				margin: 50px 0;
+				text-decoration: none;
+				border-radius: 15px;
+				opacity: 0.75;
+			}
+			#u11{
+				background-image: url(img/U1.jpg);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+			#u12{
+				background-image: url(img/U2.jpg);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+			#u13{
+				background-image: url(img/U3.jpg);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+			.u2{
+				height: 150px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			p{
+				font-size: 30px;
+				font-weight: 600;
+				line-height: 57px;
+				box-sizing: border-box;
+				background-color: white;
+				width: 350px;
+				height: 60px;
+				text-align: center;
+				margin: 335px auto;
+				color: green;
+				border-radius: 10px;
+				border: 3px solid #5eaf4d;
+				
+			}
+			
+			.btn{
+				background-color: white;
+				width: 100px;
+				height: 48px;
+				border-radius: 10px;
+				font-size: 28px;
+				font-weight: 600;
+				color: green;
+				line-height: 46px;
+				text-align: center;
+				border: 4px solid green;
+			}
+			.btn:hover{
+				background-color: #008000;
+			}
+			.u1 a:hover p{
+				color: #ffffff!important;
+				background-color: rgba(104,175,75,1)!important;
+				margin-top: 385px;
+				-webkit-transition: all 0.3s ease;
+			}
+			.u1 a:hover{
+				margin: 0;
+				width: 45%;
+				-webkit-transition: all 0.8s ease;
+				opacity: 1;
+			}
+			.u2 a:hover{
+				color: white;
+				-webkit-transition: all 0.8s ease;
+			}
+			.footer {
+				display: flex;
+				justify-content: space-around;
+				height: 212px;
+				width: 1903px;
+				background-color: rgba(34,140,34,0.8);
+				position: absolute;
+				margin: 30px 0 0 0;
+			}
+			
+			.f2 {
+				color: white;
+				margin-top: 10px;
+				font-size: 14px;
+			}
+			
+			.f3 div {
+				font-size: 25px;
+				margin-top: 25px;
+				margin-left: 80px;
+			
+			}
+			
+			.footer a {
+				text-decoration: none;
+				color: white;
+			}
+			
+			.f4 {
+				margin: 75px auto;
+				height: 50px;
+				width: 100px;
+				background-color: #5eaf4d;
+				border-radius: 10px;
+				font-size: 22px;
+				text-align: center;
+				line-height: 50px;
+			}
+			
+			.footer a:hover {
+				color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top-nav">
+			<div class="container clearf">
+				<div class="fl"><a href="index.html"><img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
+							style="height: 80px;"></a>
+				</div>
+				<div class="fl">
+					<a href="#" style="margin-left: 60px;">Pourquoi Greendow</a>
+					<a href="#">| FAQ |</a>
+					<a href="#">Acheter</a>
+				</div>
+				<div class="fr">
+					<a href="Connexion.html">Connexion</a>
+					<a href="#">| Support</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="utilisateur">
+			<div class="u2">
+				<a href="Ajout de la nouvelle fenetre.html" class="btn">Ajouter une fenêtre</a>
+				<a href="Supprimer.html" class="btn">Supprimer une fenêtre</a>
+			</div>
+			<div class="u1">
+				<a href="" id="u11"><p>Mes fenêtre</p></a>
+				<a href="Control.html" id="u12"><p>Paramètre du compte</p></a>
+				<a href="" id="u13"><p>Votre abonnement</p></a>
+			</div>
+			
+		</div>
+		
+		
+		
+		</div>
+		<div class="footer">
+			<div class="col-2"><img src="img/EPA%20rogné.png"
+					style="height:150px;margin:35px 0 0 20px" /></div>
+			<div class="col-2 f2">
+				Lorem ipsum dolor sit amet, consectetur <br>
+				adipiscing elit, sed do eiusmod tempor <br>
+				incididunt ut labore et dolore magna aliqua. <br>
+				Ut enim ad minim veniam, quis nostrud <br>
+				exercitationullamco laboris nisi ut aliquip <br>
+				ex ea commodoconsequat. Duis aute irure dolor <br>
+				in reprehenderit in voluptate velit esse cillum <br>
+				dolore eu fugiatnulla pariatur. Excepteur sint <br>
+				occaecat cupidatat non proident, sunt in culpa <br>
+				qui officia deserunt mollit anim id est laborum.
+			</div>
+			<div class="col-2 f3">
+				<div><a href="#">Qui sommes-nous?</a></div>
+				<div><a href="#">FAQ Assistance</a></div>
+				<div><a href="#">Mentions légales CGU</a></div>
+		
+			</div>
+			<div class="col-2">
+				<div class="f4">
+					<a href="mailto:Xqy1402494129@gmil.com">Contact</a>
+				</div>
+			</div>
+			<div class="col-2">
+				<img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
+					style="height:130px;margin:40px 0 0 40px">
+			</div>
+		</div>
+	</body>
+</html>
