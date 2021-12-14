@@ -10,27 +10,12 @@
 				-ms-user-select: none;
 			}
 			body {
-				/* background: linear-gradient(125deg,#845EC2,#D65DB1,#FF6F91,#FF9671,#FFC75F,#F9F871); */
-				background-image: linear-gradient(135deg, #12cfcf, #2cc281, #7eaa0a, #c38000, #ff0000);
+				/* background: url(img/Connexion%20BG.jpg) no-repeat; */
+				background-image: linear-gradient(#006838,#5bb948);
 				background-size: cover;
 				background-attachment: fixed;
-				background-size: 400%;
-				animation: bganimation 45s infinite;
 			}
-			
-			@keyframes bganimation {
-				0% {
-					background-position: 0% 50%;
-				}
-			
-				50% {
-					background-position: 100% 50%;
-				}
-			
-				100% {
-					background-position: 0% 50%;
-				}
-			}
+
 			.container {
 				display: block;
 				max-width: 1080px;
@@ -60,21 +45,43 @@
 			.col-2 {
 				width: 20%;
 			}
+
+			.col-3{
+				
+				display: block;
+				position: relative;
+				min-height: 1px;
+				float: left;
+				width: 25%;
+			}
+
+			.col-3 {
+				width: 25%;
+			}
+
 			.top-nav a {
 				height: 80px;
 				line-height: 80px;
 				text-decoration: none;
 				color: black;
 				font-size: 20px;
+				font-family: Century Gothic;
+				font-size: 20px;
+			}
+
+			.top-nav{
+				background-color: #e6ffd3;
+				height : 85px;
 			}
 			
 			.top-nav a:hover {
 				color: royalblue;
 			}
 			.Gestionnaire{
+				font-family: Century Gothic;
 				position: absolute;
 				top: 50%;
-				margin-top: -300px;
+				margin-top: -200px;
 				left: 50%;
 				margin-left: -500px;
 				background-color: rgba(0,0,0,0.4);
@@ -137,16 +144,19 @@
 				display: flex;
 				justify-content: space-around;
 				height: 212px;
-				width: 1903px;
-				/* background-color: rgba(34,140,34,0.8); */
+				width: 1920px;
+				/* background-color: rgba(34, 140, 34, 0.8); */
 				position: absolute;
-				margin: 745px 0 0 0;
+				margin: 55% 0 0 0;
+				background-color: #228B22;
+				width : 100%;
 			}
 			
 			.f2 {
 				color: white;
 				margin-top: 10px;
-				font-size: 14px;
+				font-size: 12px;
+				font-family: Century Gothic;
 			}
 			
 			.f3 div {
@@ -159,6 +169,8 @@
 			.footer a {
 				text-decoration: none;
 				color: white;
+				font-family: Century Gothic;
+				font-size: 20px;
 			}
 			
 			.f4 {
@@ -172,6 +184,12 @@
 				line-height: 50px;
 			}
 			
+			.f4 a{
+				color: white;
+				font-family: Century Gothic;
+				font-size: 20px;
+			}
+
 			.footer a:hover {
 				color: yellow;
 			}
@@ -241,7 +259,7 @@
 		<div class="footer">
 			<div class="col-2"><img src="img/EPA%20rogné.png"
 					style="height:150px;margin:35px 0 0 20px" /></div>
-			<div class="col-2 f2">
+			<div class="col-3 f2">
 				Lorem ipsum dolor sit amet, consectetur <br>
 				adipiscing elit, sed do eiusmod tempor <br>
 				incididunt ut labore et dolore magna aliqua. <br>

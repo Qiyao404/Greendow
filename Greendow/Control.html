@@ -11,25 +11,10 @@
 			}
 			body {
 				/* background: linear-gradient(125deg,#845EC2,#D65DB1,#FF6F91,#FF9671,#FFC75F,#F9F871); */
-				background-image: linear-gradient(135deg, #0cec3c, #cdb600, #ff5b00, #ff007d, #bb12eb);
+				background-image: linear-gradient(#006838,#5bb948);
 				background-size: cover;
 				background-attachment: fixed;
 				background-size: 400%;
-				animation: bganimation 45s infinite;
-			}
-			/* ceci est un test */
-			@keyframes bganimation {
-				0% {
-					background-position: 0% 50%;
-				}
-			
-				50% {
-					background-position: 100% 50%;
-				}
-			
-				100% {
-					background-position: 0% 50%;
-				}
 			}
 
 			.container {
@@ -65,12 +50,22 @@
 				width: 20%;
 			}
 
+			.col-3 {
+				width: 26%;
+			}
+
 			.top-nav a {
 				height: 80px;
 				line-height: 80px;
 				text-decoration: none;
 				color: black;
 				font-size: 20px;
+				font-family: Century Gothic;
+			}
+
+			.top-nav{
+				background-color: #e6ffd3;
+				height : 85px;
 			}
 
 			.top-nav a:hover {
@@ -80,7 +75,7 @@
 			.Control {
 				position: absolute;
 				top: 50%;
-				margin-top: -350px;
+				margin-top: -200px;
 				left: 50%;
 				margin-left: -600px;
 				background-color: rgba(0, 0, 0, 0.2);
@@ -100,6 +95,7 @@
 				margin-left: 80px;
 				margin-top: 20px;
 				font-size: 30px;
+				font-family: Century Gothic;
 				color: white;
 				display: inline-block;
 			}
@@ -109,12 +105,14 @@
 				width: 120px;
 				height: 40px;
 				font-size: 25px;
+				font-family: Century Gothic;
 				border-radius: 8px;
 				background-color: lightgreen;
 			}
 
 			.capteur {
 				height: 870px;
+				font-family: Century Gothic;
 				/* background-color: blue; */
 				display: grid;
 				grid-template-rows: 1fr 1fr;
@@ -174,17 +172,21 @@
 				width: 1903px;
 				/* background-color: rgba(34, 140, 34, 0.8); */
 				position: absolute;
-				margin: 1045px 0 0 0;
+				margin: 1200px 0 0 0;
+				width : 100%;
+				background-color: #228B22;
 			}
 
 			.f2 {
 				color: white;
 				margin-top: 10px;
-				font-size: 14px;
+				font-size: 12px;
+				font-family: Century Gothic;
 			}
 
 			.f3 div {
 				font-size: 25px;
+				font-family: Century Gothic;
 				margin-top: 25px;
 				margin-left: 80px;
 
@@ -202,6 +204,7 @@
 				background-color: #5eaf4d;
 				border-radius: 10px;
 				font-size: 22px;
+				font-family: Century Gothic;
 				text-align: center;
 				line-height: 50px;
 			}
@@ -236,9 +239,9 @@
 		<div class="Control">
 			<div class="information">
 				<form action="" method="get">
-					<p style="text-align: center;font-size: 30px;color: white;margin-top: 10px;"><span
+					<p style="text-align: center;font-size: 30px;font-family:Century Gothic;color: white;margin-top: 10px;"><span
 							id="nowDateTimeSpan"></span></p>
-					<div class="I1">Etet de la fenêtre : </div>
+					<div class="I1">État de la fenêtre : </div>
 					<div class="I1" style="color: greenyellow;">Ouverte</div>
 					<div class="I1">
 						<select name="fenêtre" id="choisir">
@@ -307,7 +310,7 @@
 				occaecat cupidatat non proident, sunt in culpa <br>
 				qui officia deserunt mollit anim id est laborum.
 			</div>
-			<div class="col-2 f3">
+			<div class="col-3 f3">
 				<div><a href="#">Qui sommes-nous?</a></div>
 				<div><a href="#">FAQ Assistance</a></div>
 				<div><a href="#">Mentions légales CGU</a></div>
@@ -346,7 +349,7 @@
 			if (today.getDay() == 4) day = "Jeudi "
 			if (today.getDay() == 5) day = "Vendredi "
 			if (today.getDay() == 6) day = "Samedi "
-			document.getElementById('nowDateTimeSpan').innerHTML = yyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" +
+			document.getElementById('nowDateTimeSpan').innerHTML = dd + "/" + MM + "/" + yyyy + " - " + hh + ":" + mm + ":" +
 				ss + "   " + day;
 			setTimeout('startTime()', 1000); //每一秒中重新加载startTime()方法 
 		}
