@@ -17,12 +17,20 @@
 			} */
 			body {
 				/* background: linear-gradient(125deg,#845EC2,#D65DB1,#FF6F91,#FF9671,#FFC75F,#F9F871); */
-				background-image: linear-gradient(135deg, #fbf005, #ffb600, #ff7646, #ff2f78, #ef00a8, #d700b2, #ba00bb, #9700c4, #bd00ab, #d60092, #e4007b, #ec1f67);
+				background-image: linear-gradient(#006838,#5bb948);
 				background-size: cover;
 				background-attachment: fixed;
 				background-size: 400%;
-				animation: bganimation 45s infinite;
+				animation: bganimation 10s infinite;
 			}
+
+			/*body {
+				background-image: linear-gradient(135deg, #0FFF4B, #33FF63, #33FFF9);
+				background-size: cover;
+				background-attachment: fixed;
+				background-size: 400%;
+				animation: bganimation 10s infinite;
+			}*/
 
 			@keyframes bganimation {
 				0% {
@@ -71,11 +79,25 @@
 				width: 20%;
 			}
 
+			.col-3{
+				
+				display: block;
+				position: relative;
+				min-height: 1px;
+				float: left;
+			}
+
+			.col-3 {
+				width: 25%;
+			}
+
 			.top-nav a {
 				height: 80px;
 				line-height: 80px;
 				text-decoration: none;
 				color: black;
+				font-size: 20px;
+				font-family: Century Gothic;
 				font-size: 20px;
 			}
 
@@ -86,7 +108,7 @@
 			.Ajout {
 				position: absolute;
 				top: 50%;
-				margin-top: -300px;
+				margin-top: -210px;
 				left: 50%;
 				margin-left: -370px;
 				background-color: #5BB948;
@@ -94,6 +116,12 @@
 				height: 500px;
 				border-radius: 25px;
 				/* text-align: center; */
+				font-family: Century Gothic;
+				font-size: 20px;
+			}
+
+			.q1 input {
+				font-family: Century Gothic;
 			}
 			.q1{
 				margin:80px 0 50px 30px;
@@ -108,6 +136,12 @@
 				border-left: none;
 				border-top: none;
 			}
+
+			.top-nav{
+				background-color: #e6ffd3;
+				height : 85px;
+			}
+
 			p {
 				font-size: 30px;
 				font-weight: 600;
@@ -141,13 +175,17 @@
 				width: 1920px;
 				/* background-color: rgba(34, 140, 34, 0.8); */
 				position: absolute;
-				margin: 645px 0 0 0;
+				margin: 700px 0 0 0;
+				background-color: #228B22;
+				width : 100%;
 			}
 
 			.f2 {
 				color: white;
 				margin-top: 10px;
 				font-size: 14px;
+				font-family: Century Gothic;
+				font-size: 12px;
 			}
 
 			.f3 div {
@@ -160,6 +198,8 @@
 			.footer a {
 				text-decoration: none;
 				color: white;
+				font-family: Century Gothic;
+				font-size: 20px;
 			}
 
 			.f4 {
@@ -171,6 +211,12 @@
 				font-size: 22px;
 				text-align: center;
 				line-height: 50px;
+			}
+
+			.f4 a{
+				color: white;
+				font-family: Century Gothic;
+				font-size: 20px;
 			}
 
 			.footer a:hover {
@@ -223,7 +269,7 @@
 				occaecat cupidatat non proident, sunt in culpa <br>
 				qui officia deserunt mollit anim id est laborum.
 			</div>
-			<div class="col-2 f3">
+			<div class="col-3 f3">
 				<div><a href="#">Qui sommes-nous?</a></div>
 				<div><a href="#">FAQ Assistance</a></div>
 				<div><a href="#">Mentions légales CGU</a></div>
