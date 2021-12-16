@@ -16,26 +16,10 @@
 				background-attachment: fixed;
 			} */
 			body {
-				/* background: linear-gradient(125deg,#845EC2,#D65DB1,#FF6F91,#FF9671,#FFC75F,#F9F871); */
-				background-image: linear-gradient(135deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+				background-image: linear-gradient(#006838,#5bb948);
 				background-size: cover;
 				background-attachment: fixed;
 				background-size: 400%;
-				animation: bganimation 45s infinite;
-			}
-
-			@keyframes bganimation {
-				0% {
-					background-position: 0% 50%;
-				}
-
-				50% {
-					background-position: 100% 50%;
-				}
-
-				100% {
-					background-position: 0% 50%;
-				}
 			}
 
 			.container {
@@ -71,11 +55,26 @@
 				width: 20%;
 			}
 
+			.col-3{
+				
+				display: block;
+				position: relative;
+				min-height: 1px;
+				float: left;
+				width: 25%;
+			}
+
+			.col-3 {
+				width: 26%;
+			}
+
 			.top-nav a {
 				height: 80px;
 				line-height: 80px;
 				text-decoration: none;
 				color: black;
+				font-size: 20px;
+				font-family: Century Gothic;
 				font-size: 20px;
 			}
 
@@ -83,16 +82,22 @@
 				color: royalblue;
 			}
 
+			.top-nav{
+				background-color: #e6ffd3;
+				height : 85px;
+			}
+
 			.Quizz {
 				position: absolute;
 				top: 50%;
-				margin-top: -300px;
+				margin-top: -200px;
 				left: 50%;
 				margin-left: -370px;
 				background-color: #5BB948;
 				width: 800px;
 				height: 500px;
 				border-radius: 25px;
+				font-family: Century Gothic;
 				/* text-align: center; */
 			}
 
@@ -115,6 +120,7 @@
 				line-height: 100px;
 				border-radius: 10px;
 				border: none;
+				font-family: Century Gothic;
 			}
 			p {
 				font-size: 42px;
@@ -132,13 +138,16 @@
 				width: 1920px;
 				/* background-color: rgba(34, 140, 34, 0.8); */
 				position: absolute;
-				margin: 645px 0 0 0;
+				margin: 700px 0 0 0;
+				background-color: #228B22;
+				width : 100%;
+				font-family: Century Gothic;
 			}
 
 			.f2 {
 				color: white;
 				margin-top: 10px;
-				font-size: 14px;
+				font-size: 12px;
 			}
 
 			.f3 div {
@@ -216,7 +225,7 @@
 				occaecat cupidatat non proident, sunt in culpa <br>
 				qui officia deserunt mollit anim id est laborum.
 			</div>
-			<div class="col-2 f3">
+			<div class="col-3 f3">
 				<div><a href="#">Qui sommes-nous?</a></div>
 				<div><a href="#">FAQ Assistance</a></div>
 				<div><a href="#">Mentions légales CGU</a></div>
