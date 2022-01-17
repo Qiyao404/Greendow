@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Inscription</title>
+		<title>Connexion</title>
 		<link rel="shortcut icon" href="img/GW.ico" />
 		<style type="text/css">
 			*{
@@ -10,7 +10,7 @@
 				-ms-user-select: none;
 			}
 			body{
-				background: url(img/inscription.jpg) no-repeat;
+				background: url(img/Connexion%20BG.jpg) no-repeat;
 				background-size: cover;
 				background-attachment: fixed;
 			}
@@ -51,7 +51,6 @@
 				position: relative;
 				min-height: 1px;
 				float: left;
-				width: 25%;
 			}
 
 			.col-3 {
@@ -67,29 +66,30 @@
 				font-family: Century Gothic;
 				font-size: 20px;
 			}
-			
+
+			.top-nav{
+				background-color: white;
+				height : 85px;
+			}
+
 			.top-nav a:hover {
 				color: royalblue;
 			}
 
-			.top-nav{
-				background-color:white;
-				height : 80px;
-			}
-
-			.Inscription{
+			.Connexion{
 				position: absolute;
 				top: 50%;
-				margin-top: -250px;
+				margin-top: -175px;
 				left: 50%;
 				margin-left: -200px;
-				background-color: rgba(0,0,0,0.3);
+				background-color: rgba(0,0,0,0.15);
 				width: 400px;
-				height: 600px;
+				height: 400px;
 				border-radius: 25px;
 				text-align: center;
 				font-family: Century Gothic;
 			}
+
 			p{
 				font-size: 42px;
 				font-weight: 600;
@@ -107,13 +107,14 @@
 				border-bottom: 2px solid silver;
 				outline: none;
 				font-size: 22px;
+				font-family: Century Gothic;
 			}
 			.btn{
 				background-color: seagreen;
 				width: 70%;
 				height: 48px;
 				border-radius: 8px;
-				margin-top: 40px;
+				margin-top: 20px;
 				font-size: 28px;
 				font-weight: 600;
 				color: white;
@@ -125,18 +126,19 @@
 			.entrer:hover{
 				background-color: gainsboro;
 			}
-			.Inscription a:hover{
-				color: yellow!important;
+			.Connexion a:hover{
+				color: #4169E1!important;
 			}
 			
 			.footer {
 				display: flex;
 				justify-content: space-around;
 				height: 212px;
-				width: 100%;
+				width: 1920px;
 				background-color: rgba(34,140,34,0.8);
 				position: absolute;
 				margin: 700px 0 0 0;
+				width : 100%;
 				font-family: Century Gothic;
 			}
 			
@@ -177,12 +179,13 @@
 	<body>
 		<div class="top-nav">
 			<div class="container clearf">
-				<div class="fl"><a href="index.html"><img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
-							style="height: 80px;"></a>
+				<div class="fl"><a href="tryindex.html"><img
+					src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
+					style="height: 80px;"></a>
 				</div>
 				<div class="fl">
-					<a href="#" style="margin-left: 60px;">Pourquoi Greendow</a>
-					<a href="#">| FAQ |</a>
+					<a href="tryindex.html#pourquoi" style="margin-left: 60px;">Pourquoi Greendow</a>
+					<a href="Foire aux questions.html">| FAQ |</a>
 					<a href="#">Acheter</a>
 				</div>
 				<div class="fr">
@@ -191,20 +194,16 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		<form action="Petit quizz d'inscription.html" class="Inscription">
-			<p>Inscription</p>
+
+		<form action="" class="Connexion">
+			<p>Connexion</p>
 			<input type="text" class="entrer" placeholder="Adresse mail"/>
-			<input type="text" class="entrer" placeholder="Confirmez adresse email"/>
-			<input type="password" class="entrer" placeholder="Mot de passe" 
-			style="margin-top: 80px;"/>
-			<input type="password" class="entrer" placeholder="Confirmez mot de passe"/>
-			<input type="submit" class="btn" value="INSCRIPTION" />
-			<div><a href="Connexion.html" style="color: white;text-decoration: none;">
-			Vous avez déjà un compte ? Connectez-vous ici</a></div>
+			<input type="password"/ class="entrer" placeholder="Mot de passe">
+			<a href="#" style="float: right;margin-right: 40px;color: white;
+			text-decoration: none;margin-bottom: 15px;">Mot de passe oublié</a>
+			<input type="submit" class="btn" value="CONNEXION"/>
+			<div><a href="Inscripton.html" style="color: white;text-decoration: none;">Vous n'avez pas de compte ? Créez-en un ici </a></div>
 		</form>
-		
 		
 		</div>
 		<div class="footer">

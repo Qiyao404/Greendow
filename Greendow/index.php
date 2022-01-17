@@ -593,14 +593,22 @@
 		?>
 
 	<body>
-		<div class="top-nav">
-			<a href="" style="margin-left: calc(100% / 12);background-color: white;"><img
-					src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png" style="height: 100px;"></a>
-			<a href="#pourquoi" class="top1" style="line-height: 40px;transform: translateY(15%)">Pourquoi Greendow</a>
-			<a href="">FAQ</a>
-			<a href="">Acheter</a>
-			<a href="Connexion.html" class="top2">Connexion</a>
-			<a href="">Support</a>
+	<div class="top-nav">
+			<div class="container clearf">
+				<div class="fl"><a href="tryindex.html"><img
+					src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
+					style="height: 80px;"></a>
+				</div>
+				<div class="fl">
+					<a href="tryindex.html#pourquoi" style="margin-left: 60px;">Pourquoi Greendow</a>
+					<a href="Foire aux questions.html">| FAQ |</a>
+					<a href="#">Acheter</a>
+				</div>
+				<div class="fr">
+					<a href="Connexion.html">Connexion</a>
+					<a href="#">| Support</a>
+				</div>
+			</div>
 		</div>
 
 
