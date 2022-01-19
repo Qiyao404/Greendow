@@ -1,0 +1,40 @@
+.top-nav a {
+height: 80px;
+line-height: 80px;
+text-decoration: none;
+color: black;
+font-size: 20px;
+}
+
+.top-nav a:hover {
+color: royalblue;
+}
+
+.container {
+	display: block;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.clearf:after,
+.clearf:before {
+content: "";
+display: block;
+clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+float: right;
+}
+
+#img {
+height: 80px;
+}
+
+#pqgw {
+	margin-left: 60px;
+}
