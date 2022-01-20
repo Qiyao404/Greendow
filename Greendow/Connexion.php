@@ -205,7 +205,7 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])){
 		</style>
 	</head>
 	<body>
-		<div class="top-nav">
+		<!-- <div class="top-nav">
 			<div class="container clearf">
 				<div class="fl"><a href="index.html"><img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
 							style="height: 80px;"></a>
@@ -220,7 +220,7 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])){
 					<a href="#">| Support</a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		
 		<?php include ('inc/header1.php'); ?>
 
@@ -238,7 +238,7 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])){
 		
 		
 		</div>
-		<div class="footer">
+		<!-- <div class="footer">
 			<div class="col-2"><img src="img/EPA%20rogné.png"
 					style="height:150px;margin:35px 0 0 20px" /></div>
 			<div class="col-2 f2">
@@ -268,6 +268,6 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])){
 				<img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"
 					style="height:130px;margin:40px 0 0 40px">
 			</div>
-		</div>
+		</div> -->
 	</body>
 </html>
