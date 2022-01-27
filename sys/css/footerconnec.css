@@ -1,0 +1,63 @@
+#EPA {
+height:150px;
+margin:35px 0 0 20px;
+}
+
+#GW {
+height:130px;
+margin:40px 0 0 40px;
+}
+
+.footer {
+display: flex;
+justify-content: space-around;
+height: 212px;
+width: 1920px;
+background-color: rgba(34,140,34,0.8);
+position: absolute;
+margin: 645px 0 0 0;
+}
+
+.f2 {
+color: white;
+margin-top: 10px;
+font-size: 14px;
+}
+
+.f3 div {
+font-size: 25px;
+margin-top: 25px;
+margin-left: 80px;
+
+}
+
+.footer a {
+text-decoration: none;
+color: white;
+}
+
+.f4 {
+margin: 75px auto;
+height: 50px;
+width: 150px;
+background-color: #5eaf4d;
+border-radius: 10px;
+font-size: 22px;
+text-align: center;
+line-height: 50px;
+}
+
+.footer a:hover {
+color: yellow;
+}
+
+.col-2,
+{
+display: block;
+position: relative;
+min-height: 1px;
+float: left;
+}
+.col-2 {
+width: 20%;
+}
