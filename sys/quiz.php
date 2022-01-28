@@ -1,5 +1,6 @@
-<?php 
-	require_once('inc/session.php');
+<?php  
+        $titre = 'Quiz Greendow';
+	require_once ( 'inc/session.php' );
 	include_once('inc/head.php');
 	include_once('inc/header1.php');
 ?>
