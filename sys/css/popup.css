@@ -1,0 +1,159 @@
+
+
+/* Boîte Popup */
+/* Le Modal (l'arrière-plan) */
+.modal {
+display: none; /* Masqué par défaut */
+position: fixed; /* Rester dans la place */
+z-index: 8888; /* S'asseoir en haut */
+left: 0;
+top: 0;
+width: 100%; /* Largeur complète */
+height: 100%; /* Hauteur complète */
+overflow: auto; /* Activer défilement si nécessaire */
+background-color: rgb(0,0,0); /* Couleur de plan */
+background-color: rgba(0,0,0,0.4); /*  w/ opacité noir*/
+}
+/* Contenu Modal/Boîte*/
+.modal-content {
+background-color: #fefefe;
+margin: 10vh auto; /* 15% d'en haut et centré */
+padding: 20px;
+border: 1px solid #888;
+width: 60%; /* Pouvait être plus ou moins, dépend de la taille de l'écran  */
+}
+@media (min-width: 1366px) {
+.modal-content {
+background-color: #fefefe;
+margin: 10vh auto; /* 15% d'en haut et centré */
+padding: 20px;
+border: 1px solid #888;
+width: 30%; /* Pouvait être plus ou moins, dépend de la taille de l'écran */
+}
+}
+@media screen and (min-width:1280px) {
+
+.contact-form button {
+width: 100%;
+padding: 10px;
+border: none;
+background: #1c87c9; 
+font-size: 16px;
+font-weight: 400;
+color: #fff;
+}
+button:hover {
+background: #2371a0;
+}    
+/* Le bouton Fermer */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+button.button {
+background:none;
+border:none;
+outline: none;
+padding:0 0 3px 0;
+font-size:16px;
+cursor:pointer;
+}
+button.button:hover {
+color: royalblue;
+}
+	/*.top-nav a {
+		width: 7.69vw;
+		color: black;
+		text-decoration: none;
+		line-height: 100px;
+		height: 100px;
+		text-align: center;
+		font-size: 23px;
+		position: relative;
+		margin: 0 calc(100% / 50);
+	}
+
+	.top-nav a:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 3px;
+		width: 100%;
+		background-color: green;
+		visibility: hidden;
+		transform: scaleX(0);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		z-index: -1;
+	}
+
+	.top-nav a:hover {
+		color: green;
+		transition: all 0.3s ease;
+	}
+
+	.top-nav a:hover:before {
+		visibility: visible;
+		color: green;
+		transform: scaleX(1);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+
+	}
+}
+
+@media screen and (max-width:1279px) {
+	.top-nav {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	
+	.top-nav a {
+		width: 40%;
+		color: black;
+		text-decoration: none;
+		line-height: 75px;
+		height: 75px;
+		text-align: center;
+		font-size: 25px;
+		position: relative;
+		margin: 0 auto;
+	}
+	
+	.top-nav a:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 3px;
+		width: 100%;
+		background-color: green;
+	
+		visibility: hidden;
+		transform: scaleX(0);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		z-index: -1;
+	}
+	
+	.top-nav a:hover {
+		color: green;
+		transition: all 0.3s ease;
+	}
+	
+	.top-nav a:hover:before {
+		visibility: visible;
+		color: green;
+		transform: scaleX(1);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+	
+	}
+}*/

@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    -ms-user-select: none;
+}
+body{
+    background-image: linear-gradient(#006838,#5bb948);
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 400%;
+}
+
+h1{
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #5bb948;
+    color: #fff;
+  }
+  .question{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Century Gothic';
+    color: white;
+    text-align: center;
+    
+  }
+  .answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+    color: white;
+    
+  }
+  .answers label{
+    display: block;
+    margin-bottom: 10px;
+  }
+  button{
+    font-family: 'Work Sans', sans-serif;
+      font-size: 22px;
+      background-color: #5bb948;
+      color: #fff;
+      border: 0px;
+      border-radius: 3px;
+      padding: 20px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      margin-left: 10px;
+  }
+  button:hover{
+    background-color: #e6ffd3;
+    color: #5bb948;
+  }
+  
+  .slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .active-slide{
+    opacity: 1;
+    z-index: 2;
+  }
+  .quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+
+  #passer {
+    position: absolute;
+    right:10px;
+  }
+
+  #passer a{
+    color:white;
+    text-decoration: none;
+  }
+
+    #passer a:hover{
+      color: #5bb948;
+    }
+
+  @media screen and (max-width:377px) {
+
+.quiz-container{
+    height: 230px;
+
