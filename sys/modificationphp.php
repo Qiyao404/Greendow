@@ -65,9 +65,10 @@ if(!empty($_POST)){
             
             if($_SESSION['error'] === []){
             	$password = password_hash($_POST['newPassword'], PASSWORD_DEFAULT);
+                $id = $_SESSION['auth']['id'];
 
 
-                $changePassword = "UPDATE `users` SET `password` = '$password' WHERE (`password` = '$pass')";
+                $changePassword = "UPDATE `users` SET `password` = '$password' WHERE (`user_id` = '$id')";
                 $stmt = $db->prepare($changePassword);
                 $stmt->execute();               
             }           

@@ -9,7 +9,7 @@
 	}
 
 	require_once('inc/head.php');
-	require_once('inc/header2.php');
+	require_once('inc/header1.php');
 
 	if(isset($_SESSION['error'])){
 		foreach($_SESSION['error'] as $message){
@@ -32,7 +32,7 @@
 	<input type="password" class="entrer" placeholder="Nouveau mot de passe" name="newPassword" id="newPassword" style="display: none;"/>
 	<input type="password" class="entrer" placeholder="Confirmer nouveau mdp" name="c_newPassword" id="c_newPassword" style="display: none;"/>
 	<input type="submit" class="btn" value="MODIFIER"/>
-	<div><a href="index.php" id="compte">
+	<div><a href="index.php" style="color: white; text-decoration: none;">
 	Retourner sur la page d'accueil</a></div>
 </form>
-<?php include_once('inc/footerconnect.php');
+<?php include_once('inc/footer.php');

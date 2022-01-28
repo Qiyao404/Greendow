@@ -13,7 +13,7 @@
 
 	if(isset($_SESSION['error'])){
 		foreach($_SESSION['error'] as $message){
-			echo "<p>".$message."</p>";
+			echo "<div class='erreur'><p>".$message."</p></div>";
 		}			
 		unset($_SESSION["error"]);
 	}

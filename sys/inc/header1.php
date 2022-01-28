@@ -3,7 +3,7 @@
 	 	if($_SERVER["SCRIPT_NAME"] !== "/sys/index.php"){
 			echo '<a href="index.php"><img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"style="height: 100px;"></a>';
 		} else{
-			echo '<a href=""><img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png"style="height: 100px;"></a>';
+			echo '<a href="#" style="cursor: default;";><img src="img/Capture_d_écran_2021-09-29_à_11.34.09-removebg-preview.png" style="height: 100px;"></a>';
 		}
 	?>
 	<a href="#" class="top1" style="line-height: 40px;transform: translateY(15%)">Pourquoi Greendow</a>
@@ -14,18 +14,18 @@
 			if($_SERVER["SCRIPT_NAME"] !== "/sys/login.php"){
 				echo '<a href="login.php" class="top2">Connexion</a>';
 			} else{
-				echo '<a href="register.php" class="top2">Inscription</a>';
+				echo '<a href="register.php" class="top2 link">Inscription</a>';
 			}
 		} else{				
 			if($_SERVER["SCRIPT_NAME"] === "/sys/modification.php"){
-				echo "<a href='#' style='cursor: default;'>".$_SESSION['auth']['firstname']." ".$_SESSION['auth']['lastname']."</a>";
+				echo "<a href='#' style='cursor: default;line-height: 40px;transform: translateY(15%);' class='top2'>".$_SESSION['auth']['firstname']." ".$_SESSION['auth']['lastname']."</a>";
 			} else {
-				echo "<button class='button' data-modal='modalOne'>".$_SESSION['auth']['firstname']." ".$_SESSION['auth']['lastname']."</button>";
+				echo "<button style='line-height: 40px;transform: translateY(15%)' class='button top2' data-modal='modalOne'>".$_SESSION['auth']['firstname']." ".$_SESSION['auth']['lastname']."</button>";
 			}
-			echo '<a href="logout.php" class="top2">Déconnexion</a>';
+			echo '<a href="logout.php" >Déconnexion</a>';
 		}
 	?>
-	<a href="">Support</a>
+	<a href="#">Support</a>
 </div>
 
 <?php if($_SERVER["SCRIPT_NAME"] !== "/sys/modification.php" && isset($_SESSION['auth'])): ?>
